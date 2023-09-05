@@ -3,52 +3,52 @@ type IncomeStatement struct {
     ID int `json:"id" pg:"id"`
     Date string `json:"date" pg:"date"`
     Symbol string `json:"symbol" pg:"symbol"`
-    ReportedCurrency string `json:"reportedCurrency" pg:"reportedCurrency"`
+    ReportedCurrency string `json:"reportedCurrency" pg:"reportedcurrency"`
     Cik string `json:"cik" pg:"cik"`
-    FillingDate string `json:"fillingDate" pg:"fillingDate"`
-    AcceptedDate string `json:"acceptedDate" pg:"acceptedDate"`
-    CalendarYear int `json:"calendarYear" pg:"calendarYear"`
+    FillingDate string `json:"fillingDate" pg:"fillingdate"`
+    AcceptedDate string `json:"acceptedDate" pg:"accepteddate"`
+    CalendarYear int `json:"calendarYear" pg:"calendaryear"`
     Period string `json:"period" pg:"period"`
     Revenue float64 `json:"revenue" pg:"revenue"`
-    CostOfRevenue float64 `json:"costOfRevenue" pg:"costOfRevenue"`
-    GrossProfit float64 `json:"grossProfit" pg:"grossProfit"`
-    GrossProfitRatio float64 `json:"grossProfitRatio" pg:"grossProfitRatio"`
-    ResearchAndDevelopmentExpenses float64 `json:"researchAndDevelopmentExpenses" pg:"ResearchAndDevelopmentExpenses"`
-    GeneralAndAdministrativeExpenses float64 `json:"generalAndAdministrativeExpenses" pg:"GeneralAndAdministrativeExpenses"`
-    SellingAndMarketingExpenses float64 `json:"sellingAndMarketingExpenses" pg:"SellingAndMarketingExpenses"`
-    SellingGeneralAndAdministrativeExpenses float64 `json:"sellingGeneralAndAdministrativeExpenses" pg:"SellingGeneralAndAdministrativeExpenses"`
-    OtherExpenses float64 `json:"otherExpenses" pg:"otherExpenses"`
-    OperatingExpenses float64 `json:"operatingExpenses" pg:"operatingExpenses"`
-    CostAndExpenses float64 `json:"costAndExpenses" pg:"costAndExpenses"`
-    InterestExpense float64 `json:"interestExpense" pg:"interestExpense"`
-    DepreciationAndAmortization float64 `json:"depreciationAndAmortization" pg:"depreciationAndAmortization"`
-    Ebitda float64 `json:"ebitda" pg:"EBITDA"`
-    Ebitdaratio float64 `json:"ebitdaratio" pg:"EBITDARatio"`
-    OperatingIncome float64 `json:"operatingIncome" pg:"operatingIncome"`
-    OperatingIncomeRatio float64 `json:"operatingIncomeRatio" pg:"operatingIncomeRatio"`
-    TotalOtherIncomeExpensesNet float64 `json:"totalOtherIncomeExpensesNet" pg:"totalOtherIncomeExpensesNet"`
-    IncomeBeforeTax float64 `json:"incomeBeforeTax" pg:"incomeBeforeTax"`
-    IncomeBeforeTaxRatio float64 `json:"incomeBeforeTaxRatio" pg:"incomeBeforeTaxRatio"`
-    IncomeTaxExpense float64 `json:"incomeTaxExpense" pg:"incomeTaxExpense"`
-    NetIncome float64 `json:"netIncome" pg:"netIncome"`
-    NetIncomeRatio float64 `json:"netIncomeRatio" pg:"netIncomeRatio"`
-    Eps float64 `json:"eps" pg:"EPS"`
-    Epsdiluted float64 `json:"epsdiluted" pg:"EPSDiluted"`
-    WeightedAverageShsOut float64 `json:"weightedAverageShsOut" pg:"weightedAverageShsOut"`
-    WeightedAverageShsOutDil float64 `json:"weightedAverageShsOutDil" pg:"weightedAverageShsOutDil"`
+    CostOfRevenue float64 `json:"costOfRevenue" pg:"costofrevenue"`
+    GrossProfit float64 `json:"grossProfit" pg:"grossprofit"`
+    GrossProfitRatio float64 `json:"grossProfitRatio" pg:"grossprofitratio"`
+    ResearchAndDevelopmentExpenses float64 `json:"researchAndDevelopmentExpenses" pg:"researchanddevelopmentexpenses"`
+    GeneralAndAdministrativeExpenses float64 `json:"generalAndAdministrativeExpenses" pg:"generalandadministrativeexpenses"`
+    SellingAndMarketingExpenses float64 `json:"sellingAndMarketingExpenses" pg:"sellingandmarketingexpenses"`
+    SellingGeneralAndAdministrativeExpenses float64 `json:"sellingGeneralAndAdministrativeExpenses" pg:"sellinggeneralandadministrativeexpenses"`
+    OtherExpenses float64 `json:"otherExpenses" pg:"otherexpenses"`
+    OperatingExpenses float64 `json:"operatingExpenses" pg:"operatingexpenses"`
+    CostAndExpenses float64 `json:"costAndExpenses" pg:"costandexpenses"`
+    InterestExpense float64 `json:"interestExpense" pg:"interestexpense"`
+    DepreciationAndAmortization float64 `json:"depreciationAndAmortization" pg:"depreciationandamortization"`
+    Ebitda float64 `json:"ebitda" pg:"ebitda"`
+    Ebitdaratio float64 `json:"ebitdaratio" pg:"ebitdaratio"`
+    OperatingIncome float64 `json:"operatingIncome" pg:"operatingincome"`
+    OperatingIncomeRatio float64 `json:"operatingIncomeRatio" pg:"operatingincomeratio"`
+    TotalOtherIncomeExpensesNet float64 `json:"totalOtherIncomeExpensesNet" pg:"totalotherincomeexpensesnet"`
+    IncomeBeforeTax float64 `json:"incomeBeforeTax" pg:"incomebeforetax"`
+    IncomeBeforeTaxRatio float64 `json:"incomeBeforeTaxRatio" pg:"incomebeforetaxratio"`
+    IncomeTaxExpense float64 `json:"incomeTaxExpense" pg:"incometaxexpense"`
+    NetIncome float64 `json:"netIncome" pg:"netincome"`
+    NetIncomeRatio float64 `json:"netIncomeRatio" pg:"netincomeratio"`
+    Eps float64 `json:"eps" pg:"eps"`
+    Epsdiluted float64 `json:"epsdiluted" pg:"epsdiluted"`
+    WeightedAverageShsOut float64 `json:"weightedAverageShsOut" pg:"weightedaverageshsout"`
+    WeightedAverageShsOutDil float64 `json:"weightedAverageShsOutDil" pg:"weightedaverageshsoutdil"`
     Link string `json:"link" pg:"link"`
-    FinalLink string `json:"finalLink" pg:"finalLink"`
-    InterestIncome float64 `json:"interestIncome" pg:"interestIncome"`
+    FinalLink string `json:"finalLink" pg:"finallink"`
+    InterestIncome float64 `json:"interestIncome" pg:"interestincome"`
     CreatedAt time.Time `json:"createdAt" pg:"created_at"`
     UpdatedAt time.Time `json:"updatedAt" pg:"updated_at"`
     DateTimestamp time.Time `json:"dateTimestamp" pg:"date_timestamp"`
     Ticker string `json:"ticker" pg:"ticker"`
-    FillingDateTimestamp time.Time `json:"fillingDateTimestamp" pg:"fillingDate_timestamp"`
-    RevenueChange float64 `json:"revenueChange" pg:"revenueChange"`
-    GrossProfitChange float64 `json:"grossProfitChange" pg:"grossProfitChange"`
-    OperatingIncomeChange float64 `json:"operatingIncomeChange" pg:"operatingIncomeChange"`
-    NetIncomeChange float64 `json:"netIncomeChange" pg:"netIncomeChange"`
-    EbitdaChange float64 `json:"ebitdaChange" pg:"ebitdaChange"`
+    FillingDateTimestamp time.Time `json:"fillingDateTimestamp" pg:"fillingdate_timestamp"`
+    RevenueChange float64 `json:"revenueChange" pg:"revenuechange"`
+    GrossProfitChange float64 `json:"grossProfitChange" pg:"grossprofitchange"`
+    OperatingIncomeChange float64 `json:"operatingIncomeChange" pg:"operatingincomechange"`
+    NetIncomeChange float64 `json:"netIncomeChange" pg:"netincomechange"`
+    EbitdaChange float64 `json:"ebitdaChange" pg:"ebitdachange"`
     RawData string `json:"rawData" pg:"raw_data"`
     URL string `json:"url" pg:"url"`
     IncomeStatementApiId int `json:"incomeStatementApiId" pg:"income_statement_api_id"`

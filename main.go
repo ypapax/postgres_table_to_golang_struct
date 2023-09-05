@@ -122,7 +122,7 @@ type fieldAttr struct {
 func getStructLine(fieldName, fieldType string, attrs fieldAttr) string {
 	aa := []string{
 		fmt.Sprintf(`json:"%+v"`, attrs.Json),
-		fmt.Sprintf(`pg:"%+v"`, attrs.Pg),
+		fmt.Sprintf(`pg:"%+v"`, strings.ToLower(attrs.Pg)),
 	}
 	return fmt.Sprintf(`    %+v %+v %+v`, fieldName, fieldType, "`"+strings.Join(aa, " ")+"`")
 }
